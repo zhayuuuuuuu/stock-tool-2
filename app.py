@@ -137,7 +137,7 @@ def fetch_stock_data(stock_id):
         }
         return data_dict, None
     except Exception as e:
-        return None, f資料解析發生錯誤: {str(e)}
+        return None, f"資料解析發生錯誤: {str(e)}"
 
 def calculate_valuation(d):
     avg_eps = np.mean(d["eps_series"])
